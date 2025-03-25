@@ -91,7 +91,7 @@ if __name__ == "__main__":
             try:
                 response = model.generate_content(contents=[text])
                 answer = response.text.strip()
-                short_answer = answer[:150]  # ✅ Limit response length
+                short_answer = answer[:150]  #  Limit response length
                 print(f"  AI Response: {short_answer}...")
                 say(short_answer)
             except Exception as e:
